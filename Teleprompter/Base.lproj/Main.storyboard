@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Teleprompter View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="TeleprompterViewController" customModule="Teleprompter" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="JoW-a4-E69">
+                                <rect key="frame" x="16" y="29" width="343" height="580"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <mutableString key="text">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+’Twas brillig, and the slithy toves
+      Did gyre and gimble in the wabe:
+All mimsy were the borogoves,
+      And the mome raths outgrabe.
+
+“Beware the Jabberwock, my son!
+      The jaws that bite, the claws that catch!
+Beware the Jubjub bird, and shun
+      The frumious Bandersnatch!”
+
+He took his vorpal sword in hand;
+      Long time the manxome foe he sought—
+So rested he by the Tumtum tree
+      And stood awhile in thought.
+
+And, as in uffish thought he stood,
+      The Jabberwock, with eyes of flame,
+Came whiffling through the tulgey wood,
+      And burbled as it came!
+
+One, two! One, two! And through and through
+      The vorpal blade went snicker-snack!
+He left it dead, and with its head
+      He went galumphing back.
+
+“And hast thou slain the Jabberwock?
+      Come to my arms, my beamish boy!
+O frabjous day! Callooh! Callay!”
+      He chortled in his joy.
+
+’Twas brillig, and the slithy toves
+      Did gyre and gimble in the wabe:
+All mimsy were the borogoves,
+      And the mome raths outgrabe.
+
+
+
+
+
+
+
+
+
+
+
+
+
+</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <view alpha="0.69999998807907104" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C35-g8-sfu">
+                                <rect key="frame" x="0.0" y="29" width="375" height="213"/>
+                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view alpha="0.69999999999999996" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8vr-91-uxf">
+                                <rect key="frame" x="0.0" y="381" width="375" height="242"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="242" id="RIc-D5-5G3"/>
+                                </constraints>
+                            </view>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Bns-EE-F5y">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem systemItem="play" id="qj6-Om-6Ag">
+                                        <connections>
+                                            <action selector="playBTN:" destination="BYZ-38-t0r" id="URN-y2-fQQ"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem systemItem="pause" id="4sI-jh-R03">
+                                        <connections>
+                                            <action selector="pauseBtn:" destination="BYZ-38-t0r" id="R3H-II-zLs"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem width="19" systemItem="refresh" id="2IR-of-r4U">
+                                        <connections>
+                                            <action selector="replayBTN:" destination="BYZ-38-t0r" id="PHJ-y3-urd"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem systemItem="action" id="oN5-Kl-UKf">
+                                        <connections>
+                                            <action selector="flipBtn:" destination="BYZ-38-t0r" id="XeH-XI-HIv"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="C35-g8-sfu" secondAttribute="trailing" id="1UL-Q3-ycq"/>
+                            <constraint firstItem="JoW-a4-E69" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="ACz-qA-IGd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="JoW-a4-E69" secondAttribute="bottom" constant="58" id="CYU-tM-tEa"/>
+                            <constraint firstItem="8vr-91-uxf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="K4f-HV-GDV"/>
+                            <constraint firstItem="8vr-91-uxf" firstAttribute="top" secondItem="C35-g8-sfu" secondAttribute="bottom" constant="139" id="K8f-Ys-2BP"/>
+                            <constraint firstItem="JoW-a4-E69" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="9" id="Pja-HW-dRV"/>
+                            <constraint firstItem="C35-g8-sfu" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="9" id="a23-LQ-J0R"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="8vr-91-uxf" secondAttribute="bottom" constant="44" id="azq-U4-pT1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8vr-91-uxf" secondAttribute="trailing" id="p22-5T-Moo"/>
+                            <constraint firstItem="C35-g8-sfu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="wwm-Ip-4aV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JoW-a4-E69" secondAttribute="trailing" constant="16" id="zdU-Dt-xY4"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="bottomView" destination="8vr-91-uxf" id="Fuk-FI-E7r"/>
+                        <outlet property="teleVTopCon" destination="Pja-HW-dRV" id="JtN-MR-qsX"/>
+                        <outlet property="teleprompterView" destination="JoW-a4-E69" id="zBs-dH-i13"/>
+                        <outlet property="topView" destination="8vr-91-uxf" id="cP1-zf-N5W"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+</document>
